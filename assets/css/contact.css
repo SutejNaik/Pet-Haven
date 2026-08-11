@@ -1,0 +1,300 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'MuseoModerno', cursive, sans-serif;
+  }
+  
+  body {
+    background: url('../images/con-picaai.png') center/cover no-repeat;
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-attachment: fixed; 
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    padding-top: 70px;
+    font-family: 'MuseoModerno', cursive, sans-serif;
+  }
+  
+  /* HEADER (Navbar) */
+header {
+    background-color: #0d0d15; /* Dark */
+    color: white;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #00f0ff; /* Cyan */
+    position: fixed; 
+    height: 80px; 
+    top: 0;
+    left: 0;
+    width: 100%;  
+    z-index: 1000;
+    box-shadow: 0 0 15px rgba(0, 240, 255, 0.5); /* Glow */
+    transition: all 0.3s ease; /* Animation */
+    border-radius: 0 0 25px 25px; /* Rounded bottom edges */
+}
+  
+  .logo {
+    font-size: 1.8em;
+    font-weight: bold;
+    color: #00f0ff;
+
+}
+  .nav-links {
+    list-style: none;
+    display: flex;
+    align-items: center;
+  }
+  
+  .nav-links li {
+    margin: 0 15px;
+    font-size: 18px;
+  }
+  
+  .nav-links a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: 0.3s;
+  }
+  
+  .nav-links a:hover {
+    color: #00f0ff; /* Cyan */
+
+  }
+  
+  .nav-links .btn {
+    background: black;
+    color: white;
+    text-shadow: 0 0 10px rgba(0, 240, 255, 0.8);
+  }
+  
+  .nav-links .btn:hover {
+    background:#90EE90;
+    color: black;
+    text-shadow: 0 0 10px rgba(0, 240, 255, 0.8);
+  }
+  
+  .btn {
+    background: transparent;
+    color: #00f0ff; 
+    padding: 10px 15px;
+    border: 2px solid #00f0ff; 
+    border-radius: 10px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    box-shadow: 0 0 10px rgba(0, 240, 255, 0.3); 
+  }
+  
+  .btn:hover {
+    background: black; 
+    color: #00f0ff; 
+    box-shadow: 0 0 20px #90EE90; 
+    transform: translateY(-2px); 
+  }
+
+
+        /* Contact Form Container */
+        .container {
+            max-width: 600px;
+            margin: 40px auto;
+            padding: 30px;
+            background: rgba(20, 20, 20, 0.9); 
+            box-shadow: 0 0 20px rgba(0, 240, 255, 0.3);
+            border-radius: 10px;
+            text-align: center;
+            border: 2px solid #00f0ff;
+        }
+
+        .container h2 {
+            color: #00f0ff;
+            margin-bottom: 20px;
+            text-shadow: 0 0 5px rgba(0, 240, 255, 0.3);
+        }
+
+/* Form Styling */
+        
+        .form-group {
+            margin-bottom: 20px;
+            text-align: left;
+        }
+
+        .form-group label {
+            display: block;
+            font-weight: bold;
+            color: #00f0ff;
+            margin-bottom: 5px;
+        }
+
+/* Form Styling */
+.form-group input, 
+.form-group textarea {
+    width: 100%;
+    padding: 12px;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: 2px solid #00f0ff; 
+    color: black;
+    font-family: 'MuseoModerno', cursive, sans-serif;
+    transition: all 0.3s ease;
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+    color: black(0, 240, 255, 0.6); 
+}
+
+/* Neon Green Focus Effect */
+.form-group input:focus, 
+.form-group textarea:focus {
+    outline: none;
+    border-color: #90EE90; 
+    box-shadow: 0 0 15px #90EE90;
+}
+
+
+        /* Submit Button */
+        .submit-btn {
+            background: #00f0ff;
+            color: #0d0d15;
+            padding: 12px 30px;
+            border: none;
+            border-radius: 5px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 0 15px rgba(0, 240, 255, 0.5);
+            font-size: 1.1em;
+            display: inline-block;
+            margin-top: 10px;
+        }
+
+
+
+        .submit-btn:hover {
+            animation: none;
+            transform: translateY(-5px) scale(1.05);
+            box-shadow: 0 0 25px rgba(0, 240, 255, 0.8);
+        }
+
+        /* Success & Error Messages */
+        .success-msg, .error-msg {
+            padding: 15px;
+            border-radius: 5px;
+            text-align: center;
+            margin-bottom: 20px;
+            font-weight: bold;
+            font-size: 1.1em;
+        }
+
+        .success-msg {
+            color: #155724;
+            background: #d4edda;
+            border: 1px solid #c3e6cb;
+        }
+
+        .error-msg {
+            color: #721c24;
+            background: #f8d7da;
+            border: 1px solid #f5c6cb;
+        }
+
+        /* Back Button */
+        .back-btn {
+            margin-top: 20px;
+            display: inline-block;
+            background: transparent;
+            color: #00f0ff;
+            border: 2px solid #00f0ff;
+        }
+
+        .back-btn:hover {
+            background: #00f0ff;
+            color: #0d0d15;
+        }
+
+        /* Buttons */
+.btn, .submit-btn, .back-btn {
+    background: transparent;
+    color: #00f0ff;
+    padding: 12px 15px;
+    border-radius: 10px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    border: 2px solid #00f0ff;
+    box-shadow: 0 0 10px rgba(0, 240, 255, 0.3);
+    display: inline-block;
+    font-size: 1.1em;
+}
+
+
+.btn:hover, .submit-btn:hover, .back-btn:hover {
+    background:#90EE90; 
+    color: #0d0d15; 
+    box-shadow: 0 0 20px#90EE90; 
+    transform: translateY(-2px);
+}
+
+
+        /* FOOTER */
+        footer {
+            background: #0d0d15; 
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            border-top: 3px solid #00f0ff;
+            box-shadow: 0 0 15px rgba(0, 240, 255, 0.3);
+              border-radius:35px 35px 0 0; 
+        }
+
+        .footer-container {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            max-width: 1100px;
+            margin: auto;
+        }
+
+        .footer-section {
+            width: 25%;
+            padding: 10px;
+        }
+
+        .footer-section h3 {
+            font-size: 18px;
+            margin-bottom: 10px;
+            color: #00f0ff;
+        }
+
+        .footer-section ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .footer-section ul li {
+            margin: 5px 0;
+        }
+
+        .footer-section a {
+            color: white;
+            text-decoration: underline;
+            transition: all 0.3s ease;
+          }
+
+        .footer-section a:hover {
+            color: #00f0ff;
+
+          }
+
+        .footer-bottom {
+            margin-top: 20px;
+            font-size: 20px;
+            color: #00f0ff;
+        }
+

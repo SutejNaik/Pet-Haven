@@ -1,0 +1,71 @@
+pet_haven/
+│── assets/                # Contains CSS, JS, Images
+│   ├── css/               # Stylesheets
+│   │   ├── style.css      # Main stylesheet
+│   │   ├── profile.css    # Profile page styles
+│   │   ├── admin.css     # Admin panel styles
+│   │   ├── pets.css      # pets panel styles
+│   │   ├── login.css      #login/logout styles
+│   │   ├── contact.css   #contact page styles
+│   │   ├── about.css     #about us styles
+│   ├── images/          # Uploaded pet images
+│
+│── includes/              # Common PHP functions & DB connection
+│   ├── config.php         # Database connection
+│   ├── footer.php         # footer connection
+│   ├── header.php         #header connection
+│
+│── admin/                 # Admin Panel
+│   ├── admin.php          # Admin dashboard
+│   │── admin_login.php        # Secret admin login page 
+│   ├── manage_pets.php    # Manage all pet submissions
+│   ├── manage_adoptions.php # Manage adoption requests
+│   ├── edit_pet.php       # edit pets
+│   ├── delete_pet.php     # delete pets
+│   ├── messages.php      # Admin panel to view messages
+│
+│── users/                 # User-related pages
+│   ├── register.php       # User registration
+│   ├── login.php          # User login
+│   ├── logout.php         # User logout
+│   ├── profile.php        # User profile page
+│   ├── edit_profile.php   # edit user profile 
+│   ├── edit_pet.php       # edit pet info
+│   ├── delete.php         #delete pet from db
+│   ├── 
+│   ├──
+│
+│── pets/                  # Pet-related pages 
+│   │── pets.php               # Browse pets for adoption       
+│   ├── submit_pet.php     # Submit pet for adoption
+│   ├── update_pet_status.php  # updating pets status
+│   ├── pet_details.php    # Pet details page
+│   ├── adopt_pet.php      # Adoption form
+│
+│── adoption/              # Adoption management
+│   ├── process_adoption.php  # Handles adoption request submission
+│   ├── approve_adoption.php  # Approve an adoption
+│   ├── reject_adoption.php   # Reject an adoption
+│   ├── delete_adoption.php   # delete an adoption
+│
+├── contact.php            # Contact form
+│── index.php              # Home page 
+│── about.php              # About Us page
+├── faq.php                # frequently asked questions
+|
+
+Database Tables (SUTEJ Database)
+
+Table Name	 |  Purpose
+_____________________________________________________________________
+users	         |  Stores user details (including address & contact)
+pets	         |  Stores pet details (including owner's address)
+adoptions	 |  Stores adoption requests & statuses
+contact_messages |  Stores messages from the Contact Us form
+______________________________________________________________________
+
+
+
+
+
+
